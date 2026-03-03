@@ -1,0 +1,169 @@
+{
+  "projectType": "framework",
+  "projectName": "Cloudflare Agents",
+  "projectDescription": "A framework for building stateful AI agents on Cloudflare Workers with Durable Objects.",
+  "theme": "aspen",
+  "primaryColor": "#F6821F",
+  "lightColor": "#FFA500",
+  "darkColor": "#E86D1F",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "getting-started",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/agent-class",
+              "concepts/state",
+              "concepts/routing",
+              "concepts/callable-methods",
+              "concepts/websockets"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/ai-chat",
+              "features/scheduling",
+              "features/workflows",
+              "features/email",
+              "features/mcp-servers",
+              "features/mcp-client",
+              "features/observability"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "advanced/configuration",
+              "advanced/client-sdk",
+              "advanced/react-hooks",
+              "advanced/codemode",
+              "advanced/cross-domain-auth",
+              "advanced/webhooks",
+              "advanced/queue",
+              "advanced/retries"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/adding-to-existing-project",
+              "guides/human-in-the-loop",
+              "guides/resumable-streaming",
+              "guides/readonly-connections",
+              "guides/client-tools-continuation",
+              "guides/securing-mcp-servers",
+              "guides/mcp-transports"
+            ]
+          },
+          {
+            "group": "Migrations",
+            "pages": [
+              "migrations/ai-sdk-v5",
+              "migrations/ai-sdk-v6"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Core",
+            "pages": [
+              "api/agent",
+              "api/routing",
+              "api/state",
+              "api/callable-methods"
+            ]
+          },
+          {
+            "group": "Client",
+            "pages": [
+              "api/client",
+              "api/react-hooks"
+            ]
+          },
+          {
+            "group": "AI & Chat",
+            "pages": [
+              "api/ai-chat",
+              "api/codemode"
+            ]
+          },
+          {
+            "group": "MCP",
+            "pages": [
+              "api/mcp-server",
+              "api/mcp-client"
+            ]
+          },
+          {
+            "group": "Other",
+            "pages": [
+              "api/scheduling",
+              "api/workflows",
+              "api/email",
+              "api/observability"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Examples",
+        "groups": [
+          {
+            "group": "Examples",
+            "pages": [
+              "examples/overview",
+              "examples/counter",
+              "examples/chat-agent",
+              "examples/mcp-server",
+              "examples/workflows",
+              "examples/email-agent",
+              "examples/playground"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Persistent State with automatic sync to connected clients",
+    "Type-safe RPC via @callable() decorator",
+    "Built-in scheduling (one-time, recurring, cron)",
+    "WebSocket hibernation with lifecycle hooks",
+    "AI chat with message persistence and resumable streaming",
+    "MCP server and client support",
+    "Durable workflows with human-in-the-loop",
+    "Email routing via Cloudflare Email Routing",
+    "React hooks for frontend integration",
+    "Direct SQLite queries via Durable Objects"
+  ],
+  "publicApiSurface": [
+    "Agent - Base class for creating agents",
+    "routeAgentRequest - Router for agent requests",
+    "@callable() - Decorator for RPC methods",
+    "setState/getState - State management",
+    "schedule/cancelSchedule - Scheduling API",
+    "McpAgent - Base class for MCP servers",
+    "MCPClientManager - MCP client connections",
+    "AgentWorkflow - Workflow orchestration",
+    "EmailAgent - Email handling",
+    "useAgent - React hook for agent state",
+    "useAgentChat - React hook for AI chat",
+    "AgentClient - Vanilla JS client",
+    "ChatAgent - Higher-level AI chat agent",
+    "codeMode - Experimental code generation"
+  ]
+}
